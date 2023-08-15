@@ -14,4 +14,5 @@ After do |scenario|
   rescue Exception => exception
     puts "FAILED ==> #{exception}"
     Capybara.current_session.driver.quit
-  end end
+  end
+end

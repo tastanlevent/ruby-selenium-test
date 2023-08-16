@@ -7,7 +7,6 @@ class DontchangeButton
 
   def perform
     find(:xpath, @dont_change_button_xpath).click
-    sleep(2)
   end
 end
 

@@ -7,6 +7,5 @@ class HoverElement
   def hover_over_dropdown_menu
     element = find(:xpath, @dropdown_menu_xpath)
     element.hover
-    sleep(2)
-  end
+end
 end

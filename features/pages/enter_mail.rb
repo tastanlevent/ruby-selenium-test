@@ -7,7 +7,6 @@ class EnterMail
   def perform(email)
     email_input = find(:xpath, @email_xpath)
     email_input.send_keys(email)
-    sleep(1)
     continue_button = find(:xpath, @continue_button_xpath)
     continue_button.click
   end

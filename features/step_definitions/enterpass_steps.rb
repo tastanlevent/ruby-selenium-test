@@ -1,4 +1,4 @@
 enter_pass = EnterPass.new
-And(/^enter my password and click "([^"]*)"$/) do |arg|
-  enter_pass.perform("123456789")
+And(/^enter "([^"]*)" and click login button$/) do |pass|
+  enter_pass.perform(pass)
 end

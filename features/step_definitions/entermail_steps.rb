@@ -1,5 +1,5 @@
 enter_mail = EnterMail.new
 
-And(/^enter my email and click "Continue"$/) do
-  enter_mail.perform('deneme1.test0@gmail.com')
+And(/^enter "([^"]*)" email and click continue button$/) do |email|
+  enter_mail.perform(email)
 end

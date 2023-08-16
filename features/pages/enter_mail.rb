@@ -10,6 +10,5 @@ class EnterMail
     sleep(1)
     continue_button = find(:xpath, @continue_button_xpath)
     continue_button.click
-    sleep(2)
   end
 end

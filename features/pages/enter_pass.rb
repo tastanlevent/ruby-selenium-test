@@ -10,6 +10,6 @@ class EnterPass
     sleep(1)
     continue_button = find(:xpath, @login_button_xpath)
     continue_button.click
-    sleep(2)
+    sleep(1)
   end
 end

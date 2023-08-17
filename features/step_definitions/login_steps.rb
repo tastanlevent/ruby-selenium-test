@@ -7,3 +7,4 @@ end
 And(/^enter "([^"]*)" and click login button$/) do |pass|
   login_page.perform_pass(pass)
 end
+

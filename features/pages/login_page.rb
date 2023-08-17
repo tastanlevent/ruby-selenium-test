@@ -1,23 +1,18 @@
 class LoginPage
   def initialize
-    @email_xpath = '//*[@id="ap_email"]'
-    @continue_button_xpath = '/html/body/div[1]/div[1]/div[2]/div/div[2]/div[2]/div[1]/form/div/div/div/div[2]/span/span/input'
-    @pass_xpath = '//*[@id="ap_password"]'
-    @login_button_xpath = '//*[@id="signInSubmit"]'
+    @email_id = 'ap_email'
+    @continue_button_class = '.a-button.a-button-span12.a-button-primary'
+    @pass_id = 'ap_password'
+    @login_button_id = 'signInSubmit'
   end
 
   def perform_email(email)
-    email_input = find(:xpath, @email_xpath)
-    email_input.send_keys(email)
-    continue_button = find(:xpath, @continue_button_xpath)
-    continue_button.click
+    find(:id, @email_id).send_keys(email)
+    find(@continue_button_class).click
   end
 
   def perform_pass(pass)
-    pass_input = find(:xpath, @pass_xpath)
-    pass_input.send_keys(pass)
-    continue_button = find(:xpath, @login_button_xpath)
-    continue_button.click
-    sleep(1)
+    find(:id, @pass_id).send_keys(pass)
+    find(:id, @login_button_id).click
   end
 end

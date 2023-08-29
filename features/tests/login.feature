@@ -5,6 +5,6 @@ Feature: Amazon Login Test
     When click on the "Don't Change" button
     And hover over the dropdown menu
     And click on the "Sign In" button
-    And enter "deneme1.test0@gmail.com" email and click continue button
-    And enter "123456789" and click login button
+    And enter "enter a mail" email and click continue button
+    And enter "enter a password" and click login button
     Then should be logged in successfully
